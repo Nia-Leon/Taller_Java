@@ -22,4 +22,8 @@ public class Empleado2 {
     public void setSalarioBasico(float salarioBasico) {
         SalarioBasico = salarioBasico;
     }
+
+    public float CalcularSalario(){
+        return getSalarioBasico();
+    }
 }

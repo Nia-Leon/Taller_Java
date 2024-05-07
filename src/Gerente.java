@@ -1,5 +1,20 @@
 public class Gerente extends Empleado2{
-    public Gerente(String nombre, float salarioBasico) {
-        super(nombre, salarioBasico);
+    private float Bono;
+
+    public Gerente(String Nombre, float SalarioBasico) {
+        super(Nombre, SalarioBasico);
+    }
+
+    public float getBono() {
+        return Bono;
+    }
+
+    public void setBono(float bono) {
+        Bono = bono;
+    }
+
+    public float CalcularSalario(){
+        return super.CalcularSalario() + Bono;
     }
 }
+
