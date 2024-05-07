@@ -22,7 +22,13 @@ public class Persona {
     }
 
     public void setEdad(Integer edad) {
-        Edad = edad;
+        if (edad > 0 ){
+            this.Edad = edad;
+            System.out.println("Edad establecida");
+        }
+        else{
+            System.out.println("Ingrese una edad valida");
+        }
     }
 
     public Integer getFechaNacimiento() {
